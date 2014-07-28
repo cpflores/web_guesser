@@ -12,5 +12,8 @@
       <input type='submit' value='Guess!' />
     </form>
     <p><%= message %></p>
+    <% if cheat == "true" %>
+      <p>The secret number is <%= @@secret_number %></p>
+    <% end %>
 	</body>
 </html>
